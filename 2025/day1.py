@@ -4,7 +4,7 @@ lines = []
 start=50
 zeroCounter=0
 
-with open("input1.txt") as file_in:
+with open("2025/inputs/input1.txt") as file_in:
     for line in file_in:
         lines.append(line)
 
