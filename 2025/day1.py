@@ -9,9 +9,7 @@ with open("2025/inputs/input1.txt") as file_in:
         lines.append(line)
 
 for line in lines:
-    number = line.replace('\n','')
-    number = number.replace('R','-')
-    number = number.replace('L','+')
+    number = line.replace('\n','').replace('R','-').replace('L','+')
     start += int(number)
     start = math.fmod(start, 100)
     if start==0:
